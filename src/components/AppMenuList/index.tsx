@@ -40,7 +40,7 @@ const AppMenuList: React.FC<AppButtonProps> = ({
                 isChecked={isSelectedAll}
                 onChange={() => handleCheckboxChange(null, 'all')}
             />
-            <div className='line' style={{marginTop: 12, marginBottom: 15}} />
+            <div className='line' style={{marginTop: 10, marginBottom: 15}} />
             {
                 formData.length > 0 && (
                     formData.map((data: any, index: any) => {

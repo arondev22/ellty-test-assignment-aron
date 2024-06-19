@@ -9,12 +9,10 @@ function App() {
 
   return (
     <div className="container">
-      <div className='contentBody'>
-        <AppMenuList 
-          formData={formData}
-          setFormData={setFormData}
-        />
-      </div>
+      <AppMenuList 
+        formData={formData}
+        setFormData={setFormData}
+      />
     </div>
   );
 }
