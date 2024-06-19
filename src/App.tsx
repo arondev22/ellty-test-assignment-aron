@@ -4,14 +4,16 @@ import dummyData from './dummyData.json';
 import { AppMenuList } from './components';
 
 function App() {
-  
-  const [formData, setFormData] = React.useState(dummyData);
+
+  const onSubmit = (returnedData: any) => {
+    alert(JSON.stringify(returnedData, null, 2));
+  }
 
   return (
     <div className="container">
       <AppMenuList 
-        formData={formData}
-        setFormData={setFormData}
+        dataList={dummyData}
+        onSubmit={onSubmit}
       />
     </div>
   );
