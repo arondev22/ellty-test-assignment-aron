@@ -11,7 +11,7 @@
 .checkbox {
     width: 23px;
     height: 23px;
-    border: 1px solid #CDCDCD;
+    border: 1.5px solid #dfdfdf;
     border-radius: 6px;
     transition: background-color 0.3s ease, border-color 0.3s ease;
     background-color: white;
