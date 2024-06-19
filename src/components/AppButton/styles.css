@@ -1,0 +1,23 @@
+.buttonContainer {
+    background-color: #FFCE22;
+    border-radius: 4px;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.buttonContainer:disabled {
+    background-color: #FFD84D;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.buttonName {
+    font-family: 'Montserrat';
+}
+
+.buttonContainer:active {
+    background-color: #FFD84D; /* Change to a darker color or any other color when pressed */
+}
