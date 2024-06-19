@@ -11,7 +11,7 @@
 .checkbox {
     width: 23px;
     height: 23px;
-    border: 1px solid #888;
+    border: 1px solid #CDCDCD;
     border-radius: 6px;
     transition: background-color 0.3s ease, border-color 0.3s ease;
     background-color: white;
@@ -34,7 +34,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #878787;
+    color: #fff;
 }
 
 .checkedIcon {
@@ -43,5 +43,12 @@
 
 .customCheckbox:hover {
     background-color: #EAF0FE;
+    transition: background-color 0.3s ease;
+}
+
+.customCheckbox:hover .checkbox {
+    background-color: #5087F8;
+    border: 1px solid #5087F8;
+    border-radius: 6px;
     transition: background-color 0.3s ease;
 }

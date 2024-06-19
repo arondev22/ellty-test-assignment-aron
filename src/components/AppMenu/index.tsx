@@ -7,16 +7,19 @@ interface AppButtonProps {
     onChange?: (isChecked: boolean) => void;
 }
 
-const AppListing: React.FC<AppButtonProps> = ({
+const AppMenu: React.FC<AppButtonProps> = ({
     text = 'Page 1',
     isChecked = false,
     onChange = () => {}
 }) => {
     return (
         <div className='listContainer'>
-            <div className='textContainer'><text className='headerText'>{text}</text><AppCheckBox isChecked={isChecked} onChange={onChange} /></div>
+            <div className='textContainer'>
+                <text className='headerText'>{text}</text>
+                <AppCheckBox isChecked={isChecked} onChange={onChange} />
+            </div>
         </div>
     );
 };
 
-export default AppListing;
+export default AppMenu;

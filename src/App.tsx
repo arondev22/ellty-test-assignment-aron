@@ -1,26 +1,18 @@
 import React from 'react';
 import './App.css';
-import { AppButton, AppCheckBox, AppMenu } from './components';
+import dummyData from './dummyData.json';
+import { AppMenuList } from './components';
 
 function App() {
-  const [isChecked, setIsChecked] = React.useState(false);
-
-  const handleCheckboxChange = (isChecked: boolean) => {
-      setIsChecked(isChecked);
-  };
+  
+  const [formData, setFormData] = React.useState(dummyData);
 
   return (
     <div className="container">
       <div className='contentBody'>
-        {/* <AppButton />
-        <AppCheckBox 
-          label="Custom Checkbox"
-          isChecked={isChecked}
-          onChange={handleCheckboxChange}
-        /> */}
-        <AppMenu 
-          isChecked={isChecked}
-          onChange={handleCheckboxChange}
+        <AppMenuList 
+          formData={formData}
+          setFormData={setFormData}
         />
       </div>
     </div>

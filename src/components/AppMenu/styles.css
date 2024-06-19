@@ -1,5 +1,5 @@
 .listContainer {
-    width: 50%;
+    
 }
 
 .textContainer {
@@ -11,4 +11,5 @@
     flex: 1;
     align-self: center;
     font-family: 'Montserrat';
+    font-weight: 500;
 }
