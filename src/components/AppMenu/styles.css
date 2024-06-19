@@ -1,0 +1,14 @@
+.listContainer {
+    width: 50%;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.headerText {
+    flex: 1;
+    align-self: center;
+    font-family: 'Montserrat';
+}

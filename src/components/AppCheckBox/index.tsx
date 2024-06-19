@@ -3,14 +3,16 @@ import './styles.css';
 import { GoCheck } from "react-icons/go";
 
 interface CustomCheckboxProps {
-    label?: string;
     isChecked?: boolean;
     onChange?: (isChecked: boolean) => void;
 }
 
-const AppCheckBox: React.FC<CustomCheckboxProps> = ({ label = '', isChecked = false, onChange = () => {} }) => {
+const AppCheckBox: React.FC<CustomCheckboxProps> = ({ 
+    isChecked = false, 
+    onChange = () => {} 
+}) => {
     const toggleCheckbox = () => {
-        onChange(!isChecked); // Toggle the isChecked state
+        onChange(!isChecked);
     };
 
     return (
