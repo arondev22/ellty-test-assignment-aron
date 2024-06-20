@@ -13,7 +13,7 @@
     height: 23px;
     border: 1.5px solid #dfdfdf;
     border-radius: 6px;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    transition: background-color 0.6s ease, border-color 0.6s ease;
     background-color: white;
 }
 
@@ -43,12 +43,12 @@
 
 .customCheckbox:hover {
     background-color: #EAF0FE;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.6s ease;
 }
 
 .customCheckbox:hover .checkbox {
     background-color: #5087F8;
     border: 1px solid #5087F8;
     border-radius: 6px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.6s ease;
 }
