@@ -4,13 +4,15 @@ import AppMenu from '../AppMenu';
 import AppButton from '../AppButton';
 
 interface AppButtonProps {
-    onSubmit?: (returnedData: any) => void,
-    dataList?: any
+    onSubmit?: (returnedData: any) => void;
+    dataList?: any;
+    checkBoxVariant?: string
 }
 
 const AppMenuList: React.FC<AppButtonProps> = ({ 
     onSubmit = () => {},
     dataList = [],
+    checkBoxVariant = 'variant-1'
 }) => {
 
     const [menuDataList, setMenuDataList] = React.useState(dataList);
@@ -43,6 +45,7 @@ const AppMenuList: React.FC<AppButtonProps> = ({
         <div className='menuListContainer'>
             <AppMenu 
                 text="All Pages"
+                checkBoxVariant={checkBoxVariant}
                 isChecked={isSelectedAll}
                 onChange={() => handleCheckboxChange(null, 'all')}
             />
@@ -53,6 +56,7 @@ const AppMenuList: React.FC<AppButtonProps> = ({
                         return (
                             <AppMenu 
                                 text={data.name}
+                                checkBoxVariant={checkBoxVariant}
                                 isChecked={data.isSelected}
                                 onChange={() => handleCheckboxChange(data, index)}
                             />
