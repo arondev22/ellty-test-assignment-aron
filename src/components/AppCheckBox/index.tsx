@@ -2,14 +2,9 @@ import React, { useState } from 'react';
 import './styles.css';
 import { GoCheck } from "react-icons/go";
 import { CHECKBOX_VARIANT } from '../../constants';
+import { Props } from './interface';
 
-interface CustomCheckboxProps {
-    isChecked?: boolean;
-    onChange?: (isChecked: boolean) => void;
-    variant?: string
-}
-
-const AppCheckBox: React.FC<CustomCheckboxProps> = ({ 
+const AppCheckBox: React.FC<Props> = ({ 
     isChecked = false, 
     onChange = () => {},
     variant = CHECKBOX_VARIANT.ONE

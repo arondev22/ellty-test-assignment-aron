@@ -1,11 +1,7 @@
 import './styles.css';
+import { Props } from './interface';
 
-interface AppButtonProps {
-    onClick?: () => void;
-    buttonName?: string;
-}
-
-const AppButton: React.FC<AppButtonProps> = ({ 
+const AppButton: React.FC<Props> = ({ 
     onClick = () => {}, 
     buttonName = 'Done'
 }) => {

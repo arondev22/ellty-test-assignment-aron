@@ -1,15 +1,9 @@
 import './styles.css';
 import AppCheckBox from '../AppCheckBox';
 import { CHECKBOX_VARIANT } from '../../constants';
+import { Props } from './interface';
 
-interface AppButtonProps {
-    text?: string;
-    isChecked?: boolean;
-    onChange?: (isChecked: boolean) => void;
-    checkBoxVariant?: string
-}
-
-const AppMenu: React.FC<AppButtonProps> = ({
+const AppMenu: React.FC<Props> = ({
     text = 'Page 1',
     isChecked = false,
     checkBoxVariant = CHECKBOX_VARIANT.ONE,

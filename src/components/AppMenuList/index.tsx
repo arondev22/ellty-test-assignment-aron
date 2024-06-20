@@ -3,14 +3,9 @@ import './styles.css';
 import AppMenu from '../AppMenu';
 import AppButton from '../AppButton';
 import { CHECKBOX_VARIANT } from '../../constants';
+import { Props } from './interface';
 
-interface AppButtonProps {
-    onSubmit?: (returnedData: any) => void;
-    dataList?: any;
-    checkBoxVariant?: string
-}
-
-const AppMenuList: React.FC<AppButtonProps> = ({ 
+const AppMenuList: React.FC<Props> = ({ 
     onSubmit = () => {},
     dataList = [],
     checkBoxVariant = CHECKBOX_VARIANT.ONE
@@ -53,7 +48,7 @@ const AppMenuList: React.FC<AppButtonProps> = ({
             <div className='line' style={{marginTop: 10, marginBottom: 15}} />
             {
                 menuDataList.length > 0 && (
-                    menuDataList.map((data: any, index: any) => {
+                    menuDataList.map((data: any, index: number) => {
                         return (
                             <AppMenu 
                                 text={data.name}
