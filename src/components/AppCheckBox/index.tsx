@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './styles.css';
 import { GoCheck } from "react-icons/go";
+import { CHECKBOX_VARIANT } from '../../constants';
 
 interface CustomCheckboxProps {
     isChecked?: boolean;
@@ -11,16 +12,16 @@ interface CustomCheckboxProps {
 const AppCheckBox: React.FC<CustomCheckboxProps> = ({ 
     isChecked = false, 
     onChange = () => {},
-    variant = 'variant-2'
+    variant = CHECKBOX_VARIANT.ONE
 }) => {
     const toggleCheckbox = () => {
         onChange(!isChecked);
     };
 
     return (
-        <div className={variant === 'variant-1' ? "customCheckbox" : "customCheckbox-variant-2"} onClick={toggleCheckbox}>
+        <div className={variant === CHECKBOX_VARIANT.ONE ? "customCheckbox" : "customCheckbox-variant-2"} onClick={toggleCheckbox}>
             {
-                variant === 'variant-1' ? (
+                variant === CHECKBOX_VARIANT.ONE ? (
                     <div className={isChecked ? 'checkbox checked' : 'checkbox'} >
                         {isChecked ? <GoCheck className='checkboxIcon checkedIcon' /> : <GoCheck className='checkboxIcon' />}
                     </div>

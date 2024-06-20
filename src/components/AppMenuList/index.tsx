@@ -2,6 +2,7 @@ import React from 'react';
 import './styles.css';
 import AppMenu from '../AppMenu';
 import AppButton from '../AppButton';
+import { CHECKBOX_VARIANT } from '../../constants';
 
 interface AppButtonProps {
     onSubmit?: (returnedData: any) => void;
@@ -12,7 +13,7 @@ interface AppButtonProps {
 const AppMenuList: React.FC<AppButtonProps> = ({ 
     onSubmit = () => {},
     dataList = [],
-    checkBoxVariant = 'variant-1'
+    checkBoxVariant = CHECKBOX_VARIANT.ONE
 }) => {
 
     const [menuDataList, setMenuDataList] = React.useState(dataList);

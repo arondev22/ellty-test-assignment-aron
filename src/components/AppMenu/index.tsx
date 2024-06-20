@@ -1,5 +1,6 @@
 import './styles.css';
 import AppCheckBox from '../AppCheckBox';
+import { CHECKBOX_VARIANT } from '../../constants';
 
 interface AppButtonProps {
     text?: string;
@@ -11,7 +12,7 @@ interface AppButtonProps {
 const AppMenu: React.FC<AppButtonProps> = ({
     text = 'Page 1',
     isChecked = false,
-    checkBoxVariant = 'variant-1',
+    checkBoxVariant = CHECKBOX_VARIANT.ONE,
     onChange = () => {}
 }) => {
     return (
