@@ -15,7 +15,7 @@
     height: 23px;
     border: 1.5px solid #dfdfdf;
     border-radius: 6px;
-    transition: background-color 0.6s ease, border-color 0.6s ease;
+    transition: background-color 0.5s ease, border-color 0.5s ease;
     background-color: white;
 }
 
@@ -45,14 +45,7 @@
 
 .customCheckbox:hover {
     background-color: #EAF0FE;
-    transition: background-color 0.6s ease;
-}
-
-.customCheckbox:hover .checkbox {
-    background-color: #5087F8;
-    border: 1px solid #5087F8;
-    border-radius: 6px;
-    transition: background-color 0.6s ease;
+    transition: background-color 0.5s ease;
 }
 
 /* ---------------- Variant 2 ---------------- */
@@ -72,7 +65,7 @@
     height: 23px;
     border: 1.5px solid #dfdfdf;
     border-radius: 6px;
-    transition: background-color 0.6s ease, border-color 0.6s ease;
+    transition: background-color 0.5s ease, border-color 0.5s ease;
     background-color: white;
 }
 
@@ -97,21 +90,16 @@
 
 .checkedIcon-variant-2 {
     color: #878787;
-    transition: color 0.6s ease;
+    transition: color 0.5s ease;
 }
 
 .customCheckbox-variant-2:hover {
     background-color: #EAF0FE;
-    transition: background-color 0.6s ease;
+    transition: background-color 0.5s ease;
 }
 
 .customCheckbox-variant-2:hover .checkbox {
     border: 1px solid #5087F8;
     border-radius: 6px;
-    transition: background-color 0.6s ease;
-}
-
-.checkboxIcon-variant-2:hover {
-    color: #878787;
-    transition: color 0.6s ease;
+    transition: background-color 0.5s ease;
 }
