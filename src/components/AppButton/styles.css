@@ -14,16 +14,20 @@
     font-family: 'Montserrat';
 }
 
+.buttonName {
+    font-family: 'Montserrat';
+}
+
 .buttonContainer:disabled {
     background-color: #FFD84D;
     cursor: not-allowed;
     opacity: 0.6;
 }
 
-.buttonName {
-    font-family: 'Montserrat';
+.buttonContainer:active {
+    background-color: #FFD84D;
 }
 
-.buttonContainer:active {
-    background-color: #FFD84D; /* Change to a darker color or any other color when pressed */
+.buttonContainer:hover {
+    background-color: #FFD84D;
 }
