@@ -18,13 +18,13 @@ function App() {
           text='Checkbox variant 1'
           checkBoxVariant={CHECKBOX_VARIANT.ONE}
           isChecked={isVariant1}
-          onChange={() => setIsVariant1(!isVariant1)}
+          onChange={() => setIsVariant1(true)}
       />
       <AppMenu 
           text='Checkbox variant 2'
           checkBoxVariant={CHECKBOX_VARIANT.TWO}
           isChecked={!isVariant1}
-          onChange={() => setIsVariant1(!isVariant1)}
+          onChange={() => setIsVariant1(false)}
       />
       <div style={{height: '50px'}} />
       <AppMenuList 
